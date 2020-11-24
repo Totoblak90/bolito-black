@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+/*ENCABEZADO*/
+    .encabezado {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(108, 135, 209, 0.7);
+        border-bottom: 1px solid whitesmoke;
+    }
+    .encabezado-contenedorTitulo {
+        width: 30%;
+        background-color: rgb(241, 187, 86);
+        border-right: 1px solid whitesmoke;
+        padding: 2%;
+    }
+    .encabezado-contenedorTitulo-nombre {
+        color: black;
+        font-size: medium;
+        margin-left: 1%;
+    }
+    .encabezado-contenedorTitulo-ocupacion {
+        color: black;
+        margin-left: 5%;
+        font-size: xx-small;    
+        font-style: italic;
+    }
+    .encabezado-contenedorNavbar {
+        width: 50%;
+        display: flex;
+        margin: auto;
+    }
+    .encabezado-contenedorNavbar-movil {
+        list-style: none;
+        margin-left: 40%;
+    }
+    .encabezado-contenedorNavbar-movil li {
+        border-radius: 30%;
+        cursor: pointer;
+        background-color: rgb(241, 187, 86);
+        padding: 5px;
+    }
+    .encabezado-contenedorNavbar-movil li:hover > ul {
+        border: 1px solid white;
+        display: flex;
+    }
+    .encabezado-contenedorNavbar-navbar {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        right: 0%;
+        list-style: none;
+        z-index: 1;
+    }
+    .encabezado-contenedorNavbar-navbar li {
+        font-size: medium;
+        padding: 5px;
+        border-radius: 0%;
+        border: none;
+    }
+    .encabezado-contenedorNavbar-navbar a {
+        text-decoration: none;
+        color: black;
+    }
+    .encabezado-contenedorNavbar-navbar a:hover {
+        text-decoration: underline;
+    }
+    .encabezado-redesSociales {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2%;
+        width: 20%;
+    }
+    .encabezado-redesSociales a {
+        color: black;
+        text-decoration: none;
+        margin: 5%;
+    }
+    .encabezado-redesSociales i {
+        font-size: medium;
+    }
+    @media (min-width:375px) {
+        .encabezado-contenedorNavbar-navbar li {
+            font-size: small;
+        }
+    }
+/*END ENCABEZADO*/
+
+/*SECCIÓN 1*/
+.indexMain {
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    margin: auto;
+    background-color: rgb(241, 187, 86);
+    width: 100%;
+    padding: 2%;
+  }
+  
+  ul, li {
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  ul.slider li iframe {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1;
+  }
+  
+  ul.slider li:target {
+      opacity: 1;
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(108, 135, 209);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+  .containerDescripcion {
+      align-self: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgba(108, 135, 209, 0.7);
+  }
+  .containerDescripcion-titulo {
+      color: whitesmoke;
+    text-align: center;
+    margin: 5% 0%;
+  }
+  .containerDescripcion-texto {
+      color: whitesmoke;
+      text-align: center;
+      margin: auto 3%;
+  }
+  .containerContacto {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    align-self: center;
+    margin-top: 1.5%;
+  }
+  .fa-whatsapp {
+    font-size: 27px;
+    background-color: rgb(241, 187, 86);
+    padding: 1%;
+  }
+  .containerContacto-datos {
+    width: 30%;
+    background-color:rgb(241, 187, 86);
+    align-self: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .containerContacto-datos p {
+      font-size: xx-small;
+  }
+/*END SECCIÓN 1*/
+
+/*FOOTER*/
+
+/*END FOOTER*/

@@ -1,0 +1,24 @@
+{
+  "name": "bolito-black",
+  "version": "1.0.0",
+  "description": "Página de venta de productos artisticos y varios para bolo",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Totoblak90/bolito-black.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Totoblak90/bolito-black/issues"
+  },
+  "homepage": "https://github.com/Totoblak90/bolito-black#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
